@@ -4,13 +4,13 @@ date = 2025-06-19T03:00:41Z
 draft = false
 +++
 
-This space highlights a handful of personal and professional projects, from deep dives into malware internals to physical-layer tinkering, and the occasional delopment of tools/system to simplify my life in a SOC. It’s a mix of discipline, obsession, and curiosity.
+This space highlights a handful of personal and professional projects, from deep dives into malware internals to physical-layer tinkering, and the occasional development of tools/systems to simplify my life in a SOC. It’s a mix of discipline, obsession, and curiosity.
 
 ---
 
-### Go-to Collection of Cheat Sheets
+### My Collection of Cheat Sheets
 
-I maintain a collection of quick-reference cheat sheets covering day-to-day tasks in security operations and reverse engineering. They're written to be direct, search-friendly, and focused on real-world tasks, not just theory. Many of these cheat sheets have build on other people work I have referenced them where necessary, but please go give them some love.
+I maintain a collection of quick-reference cheat sheets covering day-to-day tasks in security operations and reverse engineering. They're written to be direct, search-friendly, and focused on real-world tasks, not just theory. Many of these cheat sheets have been built on other people's work. I have referenced them where necessary, but please go give them some love.
 
 - [Windows Event Logs Cheat Sheet](/posts/2025/06/windows-log-analysis-cheat-sheet--chainsaw/)
 - [Windows Registry Cheat Sheet](/2025/06/windows-registry-cheat-sheet/)
@@ -18,14 +18,14 @@ I maintain a collection of quick-reference cheat sheets covering day-to-day task
 - [macOS CLI Cheat Sheet](/posts/2025/06/macos-cli-commands-cheat-sheet/)
 - [IP and Domain Analysis Cheat Sheet](/posts/2025/06/ip-domain-investigation-cheat-sheet/)
 - [Regex Cheat Sheet](/posts/2025/06/regex-cheat-sheet/)
-- [Markdown Cheat Sheet](/projects/cheatsheets/markdown/)
+- [Markdown Cheat Sheet](/posts/2025/06/markdown-cheatsheet/)
 - [Malware Analysis Cheat Sheet](/posts/2025/06/malware-analysis-cheatsheet/)
 
 ---
 
 ### Malware Reversing Deep-dive
 
-I spend a lot of time peeling apart malware, from packer identification and decryption routines to exploring obscure API misuse and behavioural quirks. Some efforts become full writeups, others remain buried in folders named “why.exe” and “final_final_final_stage.ps1”.
+I spend a lot of time peeling apart malware, from packer identification and decryption routines to exploring obscure API misuse and behavioural quirks. Some efforts become full write-ups, others remain buried in folders named “why.exe” and “final_final_final_stage.ps1”.
 
 - Multi-Stage Python Malware - Coming Soon
 
