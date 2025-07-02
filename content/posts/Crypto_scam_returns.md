@@ -29,7 +29,7 @@ The campaign hinges on a convincing YouTube video titled:
 
 ![Original Video](/pictures/crypto-phish/org_video.png)
 
-The video which was pushed out by google own advertising, claims to showcase a new feature developed in collaboration with **TradingView** and **OpenAI**. It walks the viewer through how to activate this “AI indicator” using a command in the terminal after installing the TradingView desktop app.
+The video which was pushed out by Google's own advertising, claims to showcase a new feature developed in collaboration with **TradingView** and **OpenAI**. It walks the viewer through how to activate this “AI indicator” using a command in the terminal after installing the TradingView desktop app.
 
 Video walks you through the steps in the description:
 ```
