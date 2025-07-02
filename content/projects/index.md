@@ -35,7 +35,7 @@ I spend a lot of time peeling apart malware, from packer identification and decr
 
 What started as a “low-power mini lab” spiralled into a fully racked setup with virtualisation, vlan galore, and more cable management attempts than I care to admit. Projects range from Proxmox orchestration to 3d printing mounts and segmented malware sandboxes.
 
--[My Rack Setup - 2020 Extrusion DIY mini-rack](/posts/2025/05/my-rack-setup-2020-extrusion-diy-mini-rack/)
+- [My Rack Setup - 2020 Extrusion DIY mini-rack](/posts/2025/05/my-rack-setup-2020-extrusion-diy-mini-rack/)
 
 ---
 
@@ -43,7 +43,7 @@ What started as a “low-power mini lab” spiralled into a fully racked setup w
 
 I’m constantly building small scripts, tools, and pipelines, usually to streamline SOC processes, threat hunting workflows, or analysis tasks. It’s part necessity, part therapy. Selected tools may appear on GitHub when they’re not too specific to internal environments.
 
-My GitHub repo for soc-tools can be found [here](https://github.com/Darkrym/soc-tools/tree/main)
+My **GitHub repo** for _soc-tools_ can be found [here](https://github.com/Darkrym/soc-tools/tree/main)
 
 ---
 
