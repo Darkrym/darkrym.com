@@ -1,7 +1,7 @@
 ---
 author:
   name: Darkrym
-date: 2025-07-03
+date: 2025-07-02
 linktitle: TradingView
 type:
   - post
@@ -14,7 +14,7 @@ series:
 ---
 ## TradingView Themed Phish Spreads NetSupport RAT 
 
-A tried-and-tested crypto-themed cyber attack has popped up on my radar again today a social engineering campaign masquerading as a legitimate **TradingView AI indicator**.
+A tried-and-tested crypto-themed cyber attack has popped up on my radar again today, a social engineering campaign masquerading as a legitimate **TradingView AI indicator**.
 
 This isn’t new. In fact, 0x0vid did a great write-up on a similar campaign not too long ago:  [Another Day, Another Crypto Scam](https://medium.com/@0x0vid/another-day-another-crypto-scam-installing-a-rat-1f6dbbddeb43)
 
