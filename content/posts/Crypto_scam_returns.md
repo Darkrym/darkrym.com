@@ -6,7 +6,7 @@ linktitle: TradingView
 type:
   - post
   - posts
-title: "# A Familiar Crypto Scam Returns — With a More Convincing Face"
+title: "A Familiar Crypto Scam Returns — With a More Convincing Face"
 weight: 10
 series:
   - deep_dive
