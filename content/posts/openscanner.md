@@ -81,7 +81,7 @@ python3 OpenScanner.py http://malicious.url --expand
 ```
 
 - `--verbose`: show full API JSON responses
-- `--expand`: safely trace URL redirects (use in a VM)
+- `--expand`: trace URL redirects (use in a VM)
 	- Just a heads-up: this sends an actual request to the domain, so there’s some risk involved. Please only run this with a VM + VPN combo — don’t go poking shady URLs bare-handed!
 
 ---
