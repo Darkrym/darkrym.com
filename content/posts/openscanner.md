@@ -54,7 +54,7 @@ Download the OpenScanner.py file from my [GitHub](https://github.com/Darkrym/soc
 
 The following API keys are required for full functionality. Don’t worry if you don’t have all of them the tool will automatically skip any services that are not configured.
 
-| Service        | API Key Required | Notes                        |
+| Service        | API Key Available | Notes                        |
 | -------------- | ---------------- | ---------------------------- |
 | AbuseIPDB      | Yes              | Free up to 1,000 queries/day |
 | GreyNoise      | Yes              | Use the community API        |
