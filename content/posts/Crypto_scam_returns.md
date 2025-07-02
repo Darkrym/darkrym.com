@@ -152,6 +152,7 @@ These weren’t sketchy domains ending in `.xyz`, `.top`, or `.cn`. They were:
 - **Visually convincing** — especially `copycode[.]io`, which had custom logos, icons, code syntax highlighting, and page layout resembling trusted developer platforms like GitHub Gist or Pastebin.
 
 ![Copy Code](/pictures/crypto-phish/copycode.jpeg)
+
 `copycode[.]io` clearly had **serious work put into it** likely involving image generation to create branded assets and filler content. The site **didn’t raise red flags** until I tried to click on the links at the bottom of the page. It wasn't trying to sell anything, just present itself as a clean code repository.
 
 ### **The Instructions Were Technical, But Approachable**
