@@ -169,7 +169,7 @@ I’ll be honest even as an experienced cyber security analyst, after 10–20 mi
 
 All of it added up to something that didn't just "look legitimate", but it felt _familiar_, and that’s what made it dangerous.
 
- IOC's
+## IOC's
 
 | Type           | Indicator                                                                       |
 | -------------- | ------------------------------------------------------------------------------- |
