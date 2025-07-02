@@ -177,9 +177,9 @@ All of it added up to something that didn't just "look legitimate", but it felt 
 | Domain         | `betamode[.]app`                                                                |
 | C2 Domain      | `sonosarcs[.]com`                                                               |
 | IP Address     | `185.203.241[.]195`                                                             |
-| File<br>SHA256 | `client32.exe` 31804c48f9294c9fa7c165c89e487bfbebeda6daf3244ad30b93122bf933c79c |
+| File   SHA256 | `client32.exe` 31804c48f9294c9fa7c165c89e487bfbebeda6daf3244ad30b93122bf933c79c |
 | Registry Key   | `HKCU\Software\Microsoft\Windows\CurrentVersion\Run\NuClient`                   |
-### Annex A:
+### Annex A: (I have defanged the links, but its still malware so be warned)
 ```powershell
 if (Test-Path "$env:APPDATA\Nt\client32.ini") {
     Write-Host "Beta access temporarily paused due to high demand. Try again in 72 hours." -ForegroundColor Red
