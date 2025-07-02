@@ -43,6 +43,7 @@ This IP and domain investigation reference sheet outlines essential techniques a
 | [**IPVoid**](https://www.ipvoid.com/)             | Quick IP/domain blacklist check, ASN info                                                      |
 | [**WHOIS**](https://www.whois.com/whois/)         | Ownership and registration information                                                         |
 | [**RiskIQ**](https://community.riskiq.com/home)   | Passive DNS, WHOIS history, SSL certs (now merged into Microsoft Defender Threat Intelligence) |
+| [**SpeedGuide**](https://www.speedguide.net/ports.php) | 	Port number references, commonly abused and service descriptions                         |
 
 ---
 
