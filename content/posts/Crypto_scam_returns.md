@@ -27,7 +27,7 @@ The campaign hinges on a convincing YouTube video titled:
 
 > _“The First AI That Predicts Crypto Moves”_
 
-![Original Video](/pictures/crypto-phish/org_video.jpeg)
+![Original Video](/pictures/crypto-phish/org_video.png)
 
 The video which was pushed out by google own advertising, claims to showcase a new feature developed in collaboration with **TradingView** and **OpenAI**. It walks the viewer through how to activate this “AI indicator” using a command in the terminal after installing the TradingView desktop app.
 
@@ -134,9 +134,9 @@ At first glance, the video looked like a legitimate TradingView product launch:
 
 Here’s a comparison between the legitimate TradingView YouTube page and the phishing channel that delivered the malware:
 
-![Legit Channel](/pictures/crypto-phish/legit_youtube.jpeg)
+![Legit Channel](/pictures/crypto-phish/legit_youtube.png)
 
-![Phish Channel](/pictures/crypto-phish/fake_youtube.jpeg)
+![Phish Channel](/pictures/crypto-phish/fake_youtube.png)
 
 **Hard to tell, right?**  
 Even with a trained eye, it’s easy to see how someone could be tricked. Especially when you realise that **all the videos on both pages are legitimate!!!!**.
