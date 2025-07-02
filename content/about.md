@@ -16,3 +16,5 @@ What drives me most, however, is the challenge of **malware reverse engineering*
 
 Feel free to explore the site to learn more or connect if you’re interested in anything I discuss or just keen for a chat.
 
+> Disclaimer: The views, opinions, and ideas expressed on this website are entirely my own and do not reflect those of my current or past employers.
+
