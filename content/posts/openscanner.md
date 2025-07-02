@@ -82,7 +82,7 @@ python3 OpenScanner.py http://malicious.url --expand
 
 - `--verbose`: show full API JSON responses
 - `--expand`: trace URL redirects (use in a VM)
-	- Just a heads-up: this sends an actual request to the domain, so there’s some risk involved. Please only run this with a VM + VPN combo — don’t go poking shady URLs bare-handed!
+	- Just a heads-up: this sends an actual request to the domain, so there’s some risk involved. Please only run this with a VM + VPN combo. Don’t go poking shady URLs bare-handed!
 
 ---
 
@@ -136,8 +136,6 @@ python3 OpenScanner.py http://malicious.url --expand
 | **DNS**    | Fast-flux patterns, wildcard abuse, sudden NXDOMAIN spikes                |
 | **Page**   | Obfuscated JavaScript, fake login forms, invisible iframes                |
 | **Certs**  | Self-signed certs, reused certs across infra                              |
-
-Always defang malicious indicators when sharing them internally.
 
 ---
 
