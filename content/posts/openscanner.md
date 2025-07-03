@@ -220,13 +220,13 @@ From this output, we can see that although only 2 engines flagged the domain as 
 
 A few red flags we can pick out:
 
-Hosting: The IP is hosted by Podaon SIA, a VPS provider. With some pivoting, you'll find this host markets cheap VPS infrastructure — a common choice for threat actors to host malware or phishing infrastructure anonymously.
+Hosting: The IP is hosted by Podaon SIA, a VPS provider. With some pivoting, you'll find this host sells cheap VPS infrastructure, a common choice for threat actors to host malware or phishing infrastructure anonymously.
 
-WHOIS: The domain is newly registered (within the last two weeks), which is a classic trait of scam infrastructure.
+WHOIS: The domain is newly registered (within the last two weeks), which is a classic trait of constantly rotating scam/c2 infrastructure.
 
 Open Ports: Shodan shows open ports like 5986 and 8080, but not 443, which is the common port for https websites.
 
-No scans in URLScan.io, no reputation yet — often a sign the domain hasn’t been seen in the wild much.
+No scans in URLScan.io, no reputation yet, often a sign the domain hasn’t been seen in the wild much.
 
 ---
 
