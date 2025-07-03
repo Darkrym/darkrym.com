@@ -123,6 +123,110 @@ python3 OpenScanner.py http://malicious.url --expand
 - **Browserling**: View JS-heavy sites in a sandbox
 - `curl -vL` or `--expand` option: Watch redirects
 
+---
+## Let's see an Example
+
+Grabbing a Domain from the recent deep-dive I did into some Crypto Malware [here](/posts/2025/07/a-familiar-crypto-scam-returns-with-a-more-convincing-face/) 
+
+`python3 openscanner.py sonosarcs[.]com`
+
+And it outputs:
+```
+🔍 Investigating: sonosarcs.com
+Resolved Hostname: sonosarcs.com
+Resolved IP: 185.203.241.103
+
+=== IP Analysis ===
+[AbuseIPDB]
+- Reports: 0
+- Abuse Confidence Score: 0%
+- ISP: Podaon SIA
+- Usage Type: Data Center/Web Hosting/Transit
+- ASN: N/A
+- Domain Name: podaon.com
+- Country: N/A
+- Link: https://www.abuseipdb.com/check/185.203.241.103
+
+[GreyNoise]
+- Name: N/A
+- Classification: N/A
+- Tags: None
+- Link: https://viz.greynoise.io/ip/185.203.241.103
+
+[ipinfo.io]
+- City: Oude Meer
+- Org: AS211381 Podaon SIA
+- ASN: N/A
+- Link: https://ipinfo.io/185.203.241.103
+
+[Shodan]
+- Org: Podaon SIA
+- OS: Windows Server 2019 (version 1809) (build 10.0.17763)
+- Open Ports: [8080, 5986]
+- Link: https://www.shodan.io/host/185.203.241.103
+
+[Censys]
+[Censys] API credentials not set. Check manually: https://search.censys.io/hosts/185.203.241.103
+
+[IPVoid]
+- Detection count not found.
+- Link: https://www.ipvoid.com/ip-blacklist-check/?ip=185.203.241.103
+
+=== Domain/URL Intelligence ===
+[VirusTotal]
+- Harmless: 60
+- Malicious: 2
+- Suspicious: 0
+- Link: https://www.virustotal.com/gui/search/sonosarcs.com
+
+[WHOIS]
+- Domain: SONOSARCS.COM
+- Registrar: Web Commerce Communications Limited dba WebNic.cc
+- Creation Date: 2025-06-18 10:57:23
+⚠️ Domain is newly registered!
+- Expiry Date: 2028-06-18 10:57:23
+- Name Servers: JOHN.NS.CLOUDFLARE.COM, MAGDALENA.NS.CLOUDFLARE.COM
+- WHOIS Link: https://who.is/whois/sonosarcs.com
+
+[crt.sh]
+- Found 3 certificates
+- Link: https://crt.sh/?q=%25.sonosarcs.com
+
+[Hunting.abuse.ch]
+- No results for: sonosarcs.com
+
+[SecurityTrails]
+- Registrar: N/A
+- Created: N/A
+- Updated: N/A
+- Subdomains: www
+- Link: https://securitytrails.com/domain/sonosarcs.com
+
+[URLScan.io]
+- Found 0 scan(s) for domain: sonosarcs.com
+- Submit new scan: https://urlscan.io/#submit-form=sonosarcs.com
+
+[DNS Records]
+A records:
+ - 185.203.241.103
+NS records:
+ - john.ns.cloudflare.com.
+ - magdalena.ns.cloudflare.com.
+
+[Browserling]
+- Open in Browserling: https://www.browserling.com/browse/win/7/https://onosarcs.com
+```
+From this output, we can see that although only 2 engines flagged the domain as malicious on VirusTotal, that's often not enough to label it cleanly, thats why using a multi-tool approach is so important.
+
+A few red flags we can pick out:
+
+Hosting: The IP is hosted by Podaon SIA, a VPS provider. With some pivoting, you'll find this host markets cheap VPS infrastructure — a common choice for threat actors to host malware or phishing infrastructure anonymously.
+
+WHOIS: The domain is newly registered (within the last two weeks), which is a classic trait of scam infrastructure.
+
+Open Ports: Shodan shows open ports like 5986 and 8080, but not 443, which is the common port for https websites.
+
+No scans in URLScan.io, no reputation yet — often a sign the domain hasn’t been seen in the wild much.
 
 ---
 
@@ -130,8 +234,9 @@ python3 OpenScanner.py http://malicious.url --expand
 
 | Category   | Red Flags                                                                 |
 | ---------- | ------------------------------------------------------------------------- |
+| **Hosting**| Use of CDN or bulletproof hosting (BPH); VPS with anonymous registration  |
 | **Domain** | New registration, strange TLD (.zip, .cyou), WHOIS privacy, homoglyph use |
-| **IP**     | TOR/VPN detected, cloud-hosted, blacklisted, reverse DNS mismatch, BPH    |
+| **IP**     | TOR/VPN detected, cloud-hosted, blacklisted, reverse DNS mismatch    |
 | **URL**    | Shortened links, IP-based URLs, base64 params, large redirect count       |
 | **DNS**    | Fast-flux patterns, wildcard abuse, sudden NXDOMAIN spikes                |
 | **Page**   | Obfuscated JavaScript, fake login forms, invisible iframes                |
