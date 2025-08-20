@@ -6,21 +6,21 @@ linktitle:
 type:
   - post
   - posts
-title: Using OpenScanner for IP & Domain Triage
+title: Using NetTriage for IP & Domain Triage
 weight: 10
 series:
   - guide
   - tool
 ---
-Whether you're triaging phishing domains or chasing infrastructure from an IOC, time matters. I built **OpenScanner** to automate the repetitive but essential steps we all take during IP/domain investigations and to complement the cheat sheet I posted earlier. 
+Whether you're triaging phishing domains or chasing infrastructure from an IOC, time matters. I built **NetTriage** to automate the repetitive but essential steps we all take during IP/domain investigations and to complement the cheat sheet I posted earlier. 
 
 This post covers how to use the tool, how it ties into an investigation workflow, and goes through a real world case to demonstrate how to identify suspicious behaviour and infrastructure traits.
 
 ---
 
-## What Is OpenScanner?
+## What Is NetTriage?
 
-**OpenScanner** is a Python tool that automates reputation lookups, DNS resolution, WHOIS checks, passive DNS, certificate transparency, and more. It helps answer the key questions quickly:
+**NetTriage** is a Python tool that automates reputation lookups, DNS resolution, WHOIS checks, passive DNS, certificate transparency, and more. It helps answer the key questions quickly:
 
 - Is this IP known malicious?
 - Is this domain newly registered or have suspicious DNS Records?
@@ -30,7 +30,7 @@ This post covers how to use the tool, how it ties into an investigation workflow
 
 ## Why Use It?
 
-OpenScanner speeds up OSINT investigations and gives analysts:
+NetTriage speeds up OSINT investigations and gives analysts:
 - A full profile of a domain or IP from multiple angles
 - Clear output with minimal input
 - Separation of IP vs domain logic
@@ -42,7 +42,7 @@ It complements any incident response, threat hunting, or phishing triage workflo
 
 ## Installation & Setup
 
-Download the OpenScanner.py file from my [GitHub](https://github.com/Darkrym/soc-tools)
+Download the NetTriage.py file from my [GitHub](https://github.com/Darkrym/soc-tools)
 ### Requirements
 - Python 3.10+
 - Install dependencies:
@@ -52,7 +52,7 @@ Download the OpenScanner.py file from my [GitHub](https://github.com/Darkrym/soc
 
 ### API Keys
 
-The following API keys are required for full functionality. Don’t worry if you don’t have all of them the tool will automatically skip any services that are not configured.
+The following API keys are required for full functionality. Don’t worry if you don’t have all of them, the tool will automatically skip any services that are not configured.
 
 | Service        | API Key Available | Notes                        |
 | -------------- | ---------------- | ---------------------------- |
@@ -75,9 +75,9 @@ It's safer, cleaner, and won’t make future-you cry.
 ## Usage
 
 ```bash
-python3 OpenScanner.py example.com
-python3 OpenScanner.py 8.8.8.8 --verbose
-python3 OpenScanner.py http://malicious.url --expand
+python3 NetTriage.py example.com
+python3 NetTriage.py 8.8.8.8 --verbose
+python3 NetTriage.py http://malicious.url --expand
 ```
 
 - `--verbose`: show full API JSON responses
@@ -86,11 +86,11 @@ python3 OpenScanner.py http://malicious.url --expand
 
 ---
 
-## Investigation Steps (With OpenScanner)
+## Investigation Steps (With NetTriage)
 
 ### Step 1: Triage the Target
 - Use **AbuseIPDB** for IP reputation and abuse history
-- Use **URLScan.io** to look at screenshots, scripts, redirection
+- Use **URLScan.io** to look at screenshots, scripts, and redirection
 - Ask: Does it look like a normal site? Are there weird or unexpected behaviours?
 
 ### Step 2: Reputation Checks
@@ -128,7 +128,7 @@ python3 OpenScanner.py http://malicious.url --expand
 
 Grabbing a Domain from the recent deep-dive I did into some Crypto Malware [here](/posts/2025/07/a-familiar-crypto-scam-returns-with-a-more-convincing-face/) 
 
-`python3 openscanner.py sonosarcs[.]com`
+`python3 NetTriage.py sonosarcs[.]com`
 
 And it outputs:
 ```
@@ -266,6 +266,6 @@ Covers:
 
 ## Final Thoughts
 
-OpenScanner is a side-project born from need: I was tired of bouncing between tabs. If it saves you time or catches something you might've missed, it’s done its job.
+NetTriage is a side-project born from need: I was tired of bouncing between tabs. If it saves you time or catches something you might've missed, it’s done its job.
 
 Suggestions, or feature ideas welcome. 
