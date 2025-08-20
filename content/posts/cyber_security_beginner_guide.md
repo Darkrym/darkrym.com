@@ -11,8 +11,8 @@ weight: 10
 series:
   - guide
 ---
-## A Guide to Starting in Both Red and Blue Team Operations
-Cyber security is a rapidly expanding and deeply technical field, and it can be difficult to know where to begin. Whether you're a student, a career-changer, or just exploring your interests, this guide aims to provide a comprehensive yet beginner-friendly overview of the core concepts, career paths, and practical steps you can take right now to build your future in cyber security.
+## A Guide to Starting in Both Red and Blue Team Operations (Australian Edition)
+Cybersecurity is a rapidly expanding and deeply technical field, and it can be difficult to know where to begin. Whether you're a student, a career-changer, or just exploring your interests, this guide aims to provide a comprehensive yet beginner-friendly overview of the core concepts, career paths, and practical steps you can take right now to build your future in cyber security.
 
 ---
 
