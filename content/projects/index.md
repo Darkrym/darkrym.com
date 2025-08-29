@@ -13,7 +13,7 @@ This space highlights a handful of personal and professional projects, from deep
 I maintain a collection of quick-reference cheat sheets covering day-to-day tasks in security operations and reverse engineering. They're written to be direct, search-friendly, and focused on real-world tasks, not just theory. Many of these cheat sheets have been built on other people's work. I have referenced them where necessary, but please go give them some love.
 
 - [Windows Event Logs Cheat Sheet](/posts/2025/06/windows-log-analysis-cheat-sheet--chainsaw/)
-- [Windows Registry Cheat Sheet](/2025/06/windows-registry-cheat-sheet/)
+- [Windows Registry Cheat Sheet]([/posts/2025/06/windows-registry-cheat-sheet/))
 - [Windows CLI Cheat Sheet](/posts/2025/06/windows-cli-commands-cheat-sheet/)
 - [macOS CLI Cheat Sheet](/posts/2025/06/macos-cli-commands-cheat-sheet/)
 - [IP and Domain Analysis Cheat Sheet](/posts/2025/06/ip-domain-investigation-cheat-sheet/)
