@@ -27,7 +27,8 @@ I maintain a collection of quick-reference cheat sheets covering day-to-day task
 
 I spend a lot of time peeling apart malware, from packer identification and decryption routines to exploring obscure API misuse and behavioural quirks. Some efforts become full write-ups, others remain buried in folders named “why.exe” and “final_final_final_stage.ps1”.
 
-- Multi-Stage Python Malware - Coming Soon
+- [TradingView -> NetSupport RAT](posts/2025/07/a-familiar-crypto-scam-returns-with-a-more-convincing-face/)
+- [PXA Stealers Evolution to PureRAT (Python and .Net)](posts/2025/08)
 
 ---
 
