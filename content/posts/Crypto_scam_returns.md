@@ -18,7 +18,7 @@ A tried-and-tested crypto-themed cyber attack has popped up on my radar again to
 
 This isn’t new. In fact, 0x0vid did a great write-up on a similar campaign not too long ago:  [Another Day, Another Crypto Scam](https://medium.com/@0x0vid/another-day-another-crypto-scam-installing-a-rat-1f6dbbddeb43)
 
-But this new variant takes things up a notch. The YouTube account pushing this malware was so polished, it initially fooled me, and a few SOC mates into thinking the **official TradingView YouTube channel had been compromised**.
+But this new variant takes things up a notch. The YouTube account pushing this malware was so polished, **it initially fooled me, and a few SOC mates into thinking the official TradingView YouTube channel had been compromised**.
 
 ---
 ## The Hook: Fake YouTube Video Promoting AI Crypto Predictions
