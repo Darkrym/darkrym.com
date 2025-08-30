@@ -46,6 +46,8 @@ What started as a “low-power mini lab” spiralled into a fully racked setup w
 I’m constantly building small scripts, tools, and pipelines, usually to streamline SOC processes, threat hunting workflows, or analysis tasks. It’s part necessity, part therapy. Selected tools may appear on GitHub when they’re not too specific to internal environments.
 
 My **GitHub repo** for _soc-tools_ can be found [here](https://github.com/Darkrym/soc-tools/tree/main)
+- [NetTriage: Domain and IP Triage](/posts/2025/07/using-nettriage-for-ip-domain-triage/)
+- [DarkSIEM: Improves IppSec\PowerSiem for Live Sysmon Alerting]()
 
 ---
 
