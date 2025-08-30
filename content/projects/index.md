@@ -20,6 +20,7 @@ I maintain a collection of quick-reference cheat sheets covering day-to-day task
 - [Regex Cheat Sheet](/posts/2025/06/regex-cheat-sheet/)
 - [Markdown Cheat Sheet](/posts/2025/06/markdown-cheatsheet/)
 - [Malware Analysis Cheat Sheet](/posts/2025/06/malware-analysis-cheatsheet/)
+- [Sigma Rule Cheat Sheet](/posts/2025/07/sigma-rule-cheat-sheet/)
 
 ---
 
