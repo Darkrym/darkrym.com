@@ -1,7 +1,7 @@
 ---
 author:
   name: Darkrym
-date: 2026-1-23
+date: 2026-01-23
 linktitle: Curiosity_Crisis_Part2
 type:
   - post
