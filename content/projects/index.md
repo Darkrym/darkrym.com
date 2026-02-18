@@ -8,6 +8,15 @@ This space highlights a handful of personal and professional projects, from deep
 
 ---
 
+### Learning Series
+
+Whether you're just starting out or looking to fill in the gaps, this series walks through the fundamentals of cyber security in a practical, no-fluff way. Posts are written from real-world experience, not just textbooks.
+
+- [Getting Started in Cyber Security](posts/2025/06/getting-started-in-cyber-security/)
+- [The Art of Investigation Theory in the Real World](2026/02/speed-vs-depth-the-art-of-investigation-theory-in-the-real-world/)
+
+---
+
 ### My Collection of Cheat Sheets
 
 I maintain a collection of quick-reference cheat sheets covering day-to-day tasks in security operations and reverse engineering. They're written to be direct, search-friendly, and focused on real-world tasks, not just theory. Many of these cheat sheets have been built on other people's work. I have referenced them where necessary, but please go give them some love.
@@ -21,6 +30,8 @@ I maintain a collection of quick-reference cheat sheets covering day-to-day task
 - [Markdown Cheat Sheet](/posts/2025/06/markdown-cheatsheet/)
 - [Malware Analysis Cheat Sheet](/posts/2025/06/malware-analysis-cheatsheet/)
 - [Sigma Rule Cheat Sheet](/posts/2025/07/sigma-rule-cheat-sheet/)
+- [MSSQL Cheat Sheet](/posts/2026/01/mssql-cheat-sheet)
+- [Web Shell Cheat Sheet](/posts/2025/12/web-shell-cheat-sheet/)
 
 ---
 
@@ -28,7 +39,7 @@ I maintain a collection of quick-reference cheat sheets covering day-to-day task
 
 I spend a lot of time peeling apart malware, from packer identification and decryption routines to exploring obscure API misuse and behavioural quirks. Some efforts become full write-ups, others remain buried in folders named “why.exe” and “final_final_final_stage.ps1”.
 
-- [TradingView -> NetSupport RAT](/posts/2025/07/a-familiar-crypto-scam-returns-with-a-more-convincing-face/)
+- [TradingView -> NetSupport RAT (Powershell)](/posts/2025/07/a-familiar-crypto-scam-returns-with-a-more-convincing-face/)
 - [PXA Stealers Evolution to PureRAT (Python and .Net)](/posts/2025/08/pxa-stealers-evolution-to-purerat-part-1-basics-of-python-reversing-static-analysis-stage-1-2/)
 
 ---
