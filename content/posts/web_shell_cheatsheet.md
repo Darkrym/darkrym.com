@@ -2,11 +2,11 @@
 author:
   name: "Darkrym"
 date: 2025-01-12
-linktitle: Webshell
+linktitle: Web Shell
 type:
 - post
 - posts
-title: Webshell Cheat Sheet
+title: Web Shell Cheat Sheet
 weight: 10
 series:
 - cheat_sheets
