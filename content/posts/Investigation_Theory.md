@@ -14,6 +14,8 @@ series:
   - deep_dive
 ---
 
+![image](/pictures/investigation_theory.png)
+
 ## Introduction
 
 In my world of Managed Detection and Response (MDR), there's a fundamental tension that shapes every investigation: the need for speed versus the desire for depth. Unlike traditional digital forensics where you have the luxury of time to meticulously reconstruct every detail, MDR investigations operate under a different constraint. We need to move fast, contain threats, and prevent further damage. We don't have time for forensics outside of purely what we need for the next step.
