@@ -12,26 +12,15 @@ dateFormat = "2 January 2006"
 logo = "favicon.png"
 secondaryLogo = "favicon.ico"
 
-  [params.author]
-  name = "Red Blowfish"
+[params.author]
+  name = "Darkrym"
+  email = "james.northey@proton.me"
   image = "img/avatar.png"
-  headline = "This is my website with my links"
-  bio = "A little bit about you"
-
-    [[params.author.links]]
-    email = "mailto:james.northey@proton.me"
-
-    [[params.author.links]]
-    github = "https://github.com/Darkrym"
-
-    [[params.author.links]]
-    linkedin = "https://www.linkedin.com/in/j-northey/"
-
-    [[params.author.links]]
-    twitter = "https://x.com/darkrym11"
-
-["params.author"]
-name = "Darkrym"
-headline = "Ctrl+Alt+Dark - A Cyber Blog"
-bio = "SOC Analyst @HuntressLabs | Malware Junkie"
-email = "mailto:james.northey@proton.me"
+  headline = "Ctrl+Alt+Dark - A Cyber Blog"
+  bio = "SOC Analyst @HuntressLabs | Malware Junkie"
+  links = [
+    { email = "mailto:james.northey@proton.me" },
+    { github = "https://github.com/Darkrym" },
+    { linkedin = "https://www.linkedin.com/in/j-northey/" },
+    { twitter = "https://x.com/darkrym11" },
+  ]
