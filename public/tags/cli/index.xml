@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cli on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/cli/</link>
+    <description>Recent content in Cli on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows CLI Commands Cheat Sheet</title>
+      <link>//localhost:1313/posts/windows_powershell_cheatsheet/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/windows_powershell_cheatsheet/</guid>
+      <description>Fast-access PowerShell reference for system administration, automation, security auditing, covering file management, networking, scripting, and Winget for IT pros and analysts.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

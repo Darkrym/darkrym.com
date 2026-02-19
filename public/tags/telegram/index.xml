@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Telegram on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/telegram/</link>
+    <description>Recent content in Telegram on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 3 - Weaponised Python Stage (Stage 5)</title>
+      <link>//localhost:1313/posts/python_malware_part3/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part3/</guid>
+      <description>Dissect PXA Stealer&amp;rsquo;s weaponized info-stealing payload that extracts Chrome credentials, cookies, and 2FA tokens using WMI for AV enumeration before exfiltrating everything via Telegram&amp;rsquo;s Bot API.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

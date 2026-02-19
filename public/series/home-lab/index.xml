@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home Lab on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/series/home-lab/</link>
+    <description>Recent content in Home Lab on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/series/home-lab/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Rack Setup - 2020 Extrusion DIY mini-rack</title>
+      <link>//localhost:1313/posts/my_rack_setup/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/my_rack_setup/</guid>
+      <description>Build your own compact 10-inch server rack using 2020 aluminium extrusion with detailed parts list, cut measurements, and assembly instructions for a modular homelab setup.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

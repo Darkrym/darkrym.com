@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Threat-Intelligence on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/threat-intelligence/</link>
+    <description>Recent content in Threat-Intelligence on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/threat-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Familiar Crypto Scam Returns — With a More Convincing Face</title>
+      <link>//localhost:1313/posts/crypto_scam_returns/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/crypto_scam_returns/</guid>
+      <description>A polished YouTube video promoting a fake TradingView AI feature nearly fooled security analysts with professional branding and clever social engineering, delivering NetSupport RAT through PowerShell to target crypto wallets.</description>
+      
+    </item>
+    
+    <item>
+      <title>BleepingComputer - PXA Stealer to PureRAT Deployment</title>
+      <link>//localhost:1313/about/purerat-bleepingcomputer/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/about/purerat-bleepingcomputer/</guid>
+      <description>Vietnamese threat actor behind PXA Stealer has evolved their capabilities, deploying a sophisticated 10-stage attack chain culminating in PureRAT—a commercial .NET remote access trojan. The campaign demonstrates tactical maturity with DLL sideloading, multi-layer obfuscation, in-memory execution, and progression from credential theft to full system surveillance including hidden desktop access, webcam/microphone spying, and real-time keylogging.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/about/purerat-bleepingcomputer/featured.webp" />
+    </item>
+    
+    <item>
+      <title>The Hacker News - Chinese threat actors weaponizing new tools</title>
+      <link>//localhost:1313/about/chinese-hackers-thehackernews/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/about/chinese-hackers-thehackernews/</guid>
+      <description>Chinese-linked threat actors compromised over 100 systems across Taiwan, Japan, South Korea, and Hong Kong by weaponizing Nezha, an open-source monitoring tool, to deliver Gh0st RAT. The sophisticated attack chain exploited vulnerable phpMyAdmin panels using log poisoning techniques, deployed web shells via SQL injection, and used the Nezha agent for remote command execution before delivering the final payload.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/about/chinese-hackers-thehackernews/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

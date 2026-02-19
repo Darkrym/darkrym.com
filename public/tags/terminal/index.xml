@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/terminal/</link>
+    <description>Recent content in Terminal on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MacOS CLI Commands Cheat Sheet</title>
+      <link>//localhost:1313/posts/macos_terminal_cheatsheet/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/macos_terminal_cheatsheet/</guid>
+      <description>Essential macOS Terminal commands for file operations, process management, networking, Homebrew, and security controls like Gatekeeper and SIP for sysadmins and DFIR practitioners.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

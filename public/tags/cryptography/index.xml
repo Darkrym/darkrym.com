@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cryptography on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/cryptography/</link>
+    <description>Recent content in Cryptography on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Sat, 30 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 2 - In-Memory Python Loading (Stages 3 &amp; 4)</title>
+      <link>//localhost:1313/posts/python_malware_part2/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part2/</guid>
+      <description>Learn to disassemble Python bytecode and reconstruct custom hybrid encryption loaders as PXA Stealer uses multi-layered in-memory execution, registry persistence, and Telegram C2 to evade detection.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notebooklm on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/notebooklm/</link>
+    <description>Recent content in Notebooklm on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/notebooklm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning in the AI Era - Part 3: Practical Workflow with NotebookLM</title>
+      <link>//localhost:1313/posts/curiosity_crisis_part3/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/curiosity_crisis_part3/</guid>
+      <description>A hands-on guide to using NotebookLM for cybersecurity learning, including how to create study guides, generate flashcards, and build audio podcasts from technical documentation for active learning.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

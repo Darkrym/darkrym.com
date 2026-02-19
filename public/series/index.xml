@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/series/</link>
+    <description>Recent content in Series on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Basics</title>
+      <link>//localhost:1313/series/basics/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/series/basics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Curiosity Crisis</title>
+      <link>//localhost:1313/series/curiosity-crisis/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/series/curiosity-crisis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cheatsheets</title>
+      <link>//localhost:1313/series/cheatsheets/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/series/cheatsheets/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealer</title>
+      <link>//localhost:1313/series/pxa-stealer/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/series/pxa-stealer/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Home Lab</title>
+      <link>//localhost:1313/series/home-lab/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/series/home-lab/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

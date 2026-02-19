@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Velociraptor on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/velociraptor/</link>
+    <description>Recent content in Velociraptor on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/velociraptor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Huntress - Weaponized Velociraptor Delivers Ransomware</title>
+      <link>//localhost:1313/about/velociraptor-misuse-huntress/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/about/velociraptor-misuse-huntress/</guid>
+      <description>Investigation uncovered three distinct incidents where threat actors weaponized Velociraptor, a legitimate DFIR tool, for persistent command-and-control access. Attackers exploited SharePoint and WSUS vulnerabilities, installed Velociraptor as a Windows service communicating through Cloudflare tunnels, and deployed secondary tools including VS Code, OpenSSH, and TightVNC. One incident linked to Storm-2603 resulted in Warlock ransomware deployment.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/about/velociraptor-misuse-huntress/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>

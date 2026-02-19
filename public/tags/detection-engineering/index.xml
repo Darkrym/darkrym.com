@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Detection-Engineering on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/tags/detection-engineering/</link>
+    <description>Recent content in Detection-Engineering on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/detection-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sigma Rule Cheat Sheet</title>
+      <link>//localhost:1313/posts/sigma_rule_cheatsheet/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/sigma_rule_cheatsheet/</guid>
+      <description>Concise guide for writing Sigma detection rules covering structure, modifiers, best practices, and tools for SOC analysts and detection engineers working with Splunk, Elastic, or LogPoint.</description>
+      
+    </item>
+    
+    <item>
+      <title>Regex Cheat Sheet</title>
+      <link>//localhost:1313/posts/regex_cheatsheet/</link>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/regex_cheatsheet/</guid>
+      <description>Essential regex patterns for matching, capturing, and string manipulation adapted for security analysts, blue teamers, and SOC professionals working with detection rules.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

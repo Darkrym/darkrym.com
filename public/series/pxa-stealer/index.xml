@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PXA Stealer on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/series/pxa-stealer/</link>
+    <description>Recent content in PXA Stealer on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/series/pxa-stealer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 6 - Finally, the Final Stage PureRAT (Stage 9)</title>
+      <link>//localhost:1313/posts/python_malware_part6/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part6/</guid>
+      <description>After nine stages of obfuscation, the final payload reveals itself as PureRAT, a commercial .NET RAT using TLS-pinned C2, Protocol Buffers, and modular plugins for remote access and control.</description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 5 - Another Shift in Tactics (Stage 8)</title>
+      <link>//localhost:1313/posts/python_malware_part5/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part5/</guid>
+      <description>Advanced .NET loader dynamically loads assemblies from memory, decrypts payloads on-the-fly, and invokes methods without touching disk, requiring a pivot from static to dynamic analysis techniques.</description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 4 - .NET Payload Analysis (Stage 6 &amp; 7)</title>
+      <link>//localhost:1313/posts/python_malware_part4/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part4/</guid>
+      <description>The campaign shifts from Python to compiled .NET executables using process hollowing for in-memory PE injection, AMSI patching, and ETW unhooking to evade detection and establish persistence.</description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 3 - Weaponised Python Stage (Stage 5)</title>
+      <link>//localhost:1313/posts/python_malware_part3/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part3/</guid>
+      <description>Dissect PXA Stealer&amp;rsquo;s weaponized info-stealing payload that extracts Chrome credentials, cookies, and 2FA tokens using WMI for AV enumeration before exfiltrating everything via Telegram&amp;rsquo;s Bot API.</description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 2 - In-Memory Python Loading (Stages 3 &amp; 4)</title>
+      <link>//localhost:1313/posts/python_malware_part2/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part2/</guid>
+      <description>Learn to disassemble Python bytecode and reconstruct custom hybrid encryption loaders as PXA Stealer uses multi-layered in-memory execution, registry persistence, and Telegram C2 to evade detection.</description>
+      
+    </item>
+    
+    <item>
+      <title>PXA Stealers Evolution to PureRAT: Part 1 - Basics of Python Reversing &amp; Static Analysis (Stage 1 &amp; 2)</title>
+      <link>//localhost:1313/posts/python_malware_part1/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <author>james.northey@proton.me (Darkrym)</author>
+      <guid>//localhost:1313/posts/python_malware_part1/</guid>
+      <description>Uncover how a copyright phishing email delivers multi-stage Python malware through DLL sideloading, hidden archives, and Base64 obfuscation in this deep-dive intro to Python malware reverse engineering.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
