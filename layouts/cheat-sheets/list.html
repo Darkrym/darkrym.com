@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="cheatsheet-hub-wrapper">
+  <!-- Cheatsheet Hub Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/cheatsheet-hub.css">
+
+
+  <!-- CHEATSHEET CONTENT -->
+  {{ partial "cheatsheet-body.html" . }}
+
+  <!-- Cheatsheet Hub JavaScript -->
+  <script src="/js/cheatsheet-hub.js"></script>
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheat Sheets on Ctrl&#43;Alt&#43;Dark</title>
+    <link>//localhost:1313/cheat-sheets/</link>
+    <description>Recent content in Cheat Sheets on Ctrl&#43;Alt&#43;Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>james.northey@proton.me (Darkrym)</managingEditor>
+    <webMaster>james.northey@proton.me (Darkrym)</webMaster>
+    <copyright>© 2026 Darkrym</copyright>
+    <atom:link href="//localhost:1313/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
