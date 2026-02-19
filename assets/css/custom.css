@@ -1,0 +1,31 @@
+/* Blinking cursor after site title */
+.site-title-text::after {
+  content: " ▊" !important;
+  animation: blink 1s step-end infinite !important;
+  font-weight: normal !important;
+  color: rgb(var(--color-primary-500)) !important;
+  display: inline !important;
+  visibility: visible !important;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Style the site title prefix - colored but not underlined */
+.site-title-prefix {
+  color: rgb(var(--color-primary-500));
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style the site title text - underlined on hover */
+.site-title-text {
+  font-weight: bold;
+  text-decoration: inherit;
+}

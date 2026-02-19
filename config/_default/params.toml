@@ -1,0 +1,100 @@
+colorScheme = "retro-computer"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+mainSections = [ "posts" ]
+fathomAnalytics = { }
+verification = { }
+enableStyledScrollbar = true
+replyByEmail = true
+highlightCurrentMenuArea = true
+smartTOC = true
+hotlinkFeatureImage = true
+showViews = true
+showLikes = true
+
+[firebase]
+apiKey = "AIzaSyBsBUDvJbxZCV3jF3Ndq_FPD9HNN40Gpc4"
+authDomain = "darkrym-com.firebaseapp.com"
+storageBucket = "darkrym-com.firebasestorage.app"
+messagingSenderId = "244697317148"
+projectId = "darkrym-com"
+appId = "1:244697317148:web:d135a04be4ba930dfac4d9"
+measurementId = "G-TM0Z5NG7EG"
+
+[header]
+layout = "fixed"
+
+[footer]
+showCopyright = true
+showThemeAttribution = false
+showAppearanceSwitcher = true
+showScrollToTop = true
+showMenu = ""
+
+[homepage]
+layout = "background"
+homepageImage = ""
+showRecent = true
+showRecentItems = 3
+showMoreLink = false
+showMoreLinkDest = "/blowfish_artist/posts"
+cardView = true
+cardViewScreenWidth = false
+layoutBackgroundBlur = false
+
+[article]
+showDate = true
+showDateUpdated = false
+showAuthor = true
+showHero = true
+heroStyle = "big"
+showBreadcrumbs = true
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = false
+showAuthorsBadges = false
+showWordCount = true
+showSummary = true
+sharingLinks = [
+  "linkedin",
+  "twitter",
+  "whatsapp",
+  "pinterest",
+  "reddit",
+  "facebook",
+  "email"
+]
+showViews = true
+showLikes = true
+showDateOnlyInArticle = ""
+showAuthorBottom = true
+externalLinkForceNewTab = true
+showZenMode = ""
+
+[list]
+showHero = true
+heroStyle = "background"
+layoutBackgroundHeaderSpace = false
+showBreadcrumbs = false
+showSummary = true
+showTableOfContents = false
+showCards = false
+groupByYear = false
+cardView = false
+cardViewScreenWidth = false
+constrainItemsWidth = ""
+
+[sitemap]
+excludedKinds = [ ]
+
+[taxonomy]
+showTermCount = true

@@ -1,0 +1,28 @@
+[[main]]
+name = "/topics"
+pageRef = "topics"
+identifier = "GYqds6YnUy"
+weight = 9_999
+
+[[main]]
+name = "/posts"
+pageRef = "posts"
+identifier = "dsyKTxSndI"
+weight = 9_999
+
+[[main]]
+name = "/about-me"
+pageRef = "about"
+identifier = "TutCZ59xNe"
+weight = 9_999
+
+[[footer]]
+name = "Tags"
+pageRef = "tags"
+weight = 10
+
+[[footer]]
+name = "Series"
+pageRef = "series"
+identifier = "4G9fioFbBg"
+weight = 9_999

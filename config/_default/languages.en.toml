@@ -1,0 +1,37 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Ctrl+Alt+Dark"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+description = "My awesome website"
+dateFormat = "2 January 2006"
+logo = "favicon.png"
+secondaryLogo = "favicon.ico"
+
+  [params.author]
+  name = "Red Blowfish"
+  image = "img/avatar.png"
+  headline = "This is my website with my links"
+  bio = "A little bit about you"
+
+    [[params.author.links]]
+    email = "james.northey@proton.me"
+
+    [[params.author.links]]
+    github = "https://github.com/Darkrym"
+
+    [[params.author.links]]
+    linkedin = "https://www.linkedin.com/in/j-northey/"
+
+    [[params.author.links]]
+    twitter = "https://x.com/darkrym11"
+
+["params.author"]
+name = "Darkrym"
+headline = "Ctrl+Alt+Dark - A Cyber Blog"
+bio = "SOC Analyst @HuntressLabs | Malware Junkie"
+email = "james.northey@proton.me"
