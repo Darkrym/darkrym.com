@@ -19,7 +19,7 @@ secondaryLogo = "favicon.ico"
   bio = "A little bit about you"
 
     [[params.author.links]]
-    email = "james.northey@proton.me"
+    email = "mailto:james.northey@proton.me"
 
     [[params.author.links]]
     github = "https://github.com/Darkrym"
@@ -34,4 +34,4 @@ secondaryLogo = "favicon.ico"
 name = "Darkrym"
 headline = "Ctrl+Alt+Dark - A Cyber Blog"
 bio = "SOC Analyst @HuntressLabs | Malware Junkie"
-email = "james.northey@proton.me"
+email = "mailto:james.northey@proton.me"

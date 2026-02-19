@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# Pull latest changes from GitHub
-echo "Pulling latest changes from GitHub..."
-git pull origin blowfish-lite
-
-# Clean Hugo cache and rebuild
-echo "Cleaning Hugo cache..."
+# Clean Hugo cache first to avoid git conflicts
+echo "Cleaning Hugo cache and build artifacts..."
 rm -rf public/ resources/
+
+# Reset any local changes and pull latest changes from GitHub
+echo "Pulling latest changes from GitHub..."
+git fetch origin blowfish-lite
+git reset --hard origin/blowfish-lite
 
 echo "Building site with Hugo..."
 hugo --gc --cleanDestinationDir
