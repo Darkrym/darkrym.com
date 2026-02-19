@@ -19,7 +19,7 @@ pkill -f "python.*SimpleHTTPServer" || true
 # Start Python web server in the background
 echo "Starting Python web server..."
 cd public
-nohup python3 -m http.server 8000 > ../server.log 2>&1 &
+nohup python3 -m http.server 1313 > ../server.log 2>&1 &
 
-echo "Done! Server running on port 8000"
+echo "Done! Server running on port 1313"
 echo "View logs: tail -f server.log"
