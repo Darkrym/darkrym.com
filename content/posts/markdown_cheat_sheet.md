@@ -1,4 +1,3 @@
-
 ---
 author:
   name: "Darkrym"
@@ -9,6 +8,8 @@ type:
 - posts
 title: Markdown Cheatsheet
 weight: 10
+_build:
+  list: never
 tags:
   - cheatsheet
   - reference

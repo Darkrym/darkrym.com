@@ -8,6 +8,8 @@ type:
   - posts
 title: Sigma Rule Cheat Sheet
 weight: 10
+_build:
+  list: never
 tags:
   - cheatsheet
   - sigma

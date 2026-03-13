@@ -17,6 +17,7 @@ series:
   - Basics
 series_order: 1
 summary: A comprehensive Australian guide to breaking into cybersecurity, covering red vs blue team paths, practical skills development, certifications, programming projects, and government career opportunities.
+featureimage: /pictures/beginners_guide.png
 ---
 ## A Guide to Starting in Both Red and Blue Team Operations (Australian Edition)
 Cybersecurity is a rapidly expanding and deeply technical field, and it can be difficult to know where to begin. Whether you're a student, a career-changer, or just exploring your interests, this guide aims to provide a comprehensive yet beginner-friendly overview of the core concepts, career paths, and practical steps you can take right now to build your future in cyber security.

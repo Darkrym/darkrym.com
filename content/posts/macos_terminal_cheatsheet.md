@@ -8,6 +8,8 @@ type:
 - posts
 title: MacOS CLI Commands Cheat Sheet
 weight: 10
+_build:
+  list: never
 tags:
   - cheatsheet
   - macos
