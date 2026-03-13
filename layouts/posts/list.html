@@ -4,7 +4,19 @@
   {{ $showToc := and $enableToc (in .TableOfContents "<ul") }}
 
   {{/* Filter out posts with "cheatsheet" tag */}}
-  {{ $filteredPages := where .Pages "Params.tags" "not intersect" (slice "cheatsheet") }}
+  {{ $allPages := .Pages }}
+  {{ $filteredPages := slice }}
+  {{ range $allPages }}
+    {{ $hasCheatsheet := false }}
+    {{ with .Params.tags }}
+      {{ if in . "cheatsheet" }}
+        {{ $hasCheatsheet = true }}
+      {{ end }}
+    {{ end }}
+    {{ if not $hasCheatsheet }}
+      {{ $filteredPages = $filteredPages | append . }}
+    {{ end }}
+  {{ end }}
 
   {{/* Hero */}}
   {{ if site.Params.list.showHero | default false }}
