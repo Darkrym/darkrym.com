@@ -17,7 +17,7 @@ series:
   - Curiosity Crisis
 series_order: 2
 summary: Discover evidence-based learning frameworks including the three-phase Learning Cycle (Understanding, Remembering, Focusing) and how to adapt cybersecurity training to your personal learning style with AI.
-featureimage: https://darkrym.com/pictures/cc_2.png
+featureimage: pictures/cc_2.png
 ---
 
 ## Introduction

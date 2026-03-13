@@ -17,7 +17,7 @@ series:
   - Curiosity Crisis
 series_order: 1
 summary: AI isn't making us stupider, our curiosity has been atrophying for years and AI just makes it visible. Learn why curiosity is a muscle you can rebuild and how to use AI as an amplifier, not a crutch.
-featureimage: https://darkrym.com/pictures/CC_1.png
+featureimage: pictures/CC_1.png
 ---
 
 ## Quick Caveat - A Note on AI Ethics and Safety

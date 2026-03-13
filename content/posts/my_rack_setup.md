@@ -16,7 +16,7 @@ series:
 - Home Lab
 series_order: 1
 summary: Build your own compact 10-inch server rack using 2020 aluminium extrusion with detailed parts list, cut measurements, and assembly instructions for a modular homelab setup.
-featureimage: https://darkrym.com/pictures/mini-rack.jpeg
+featureimage: pictures/mini-rack.jpeg
 ---
 
 Build your own compact and modular mini server rack using 2020 aluminium extrusion. This guide will walk you through the parts, tools, and steps needed to assemble a rack suitable for home labs or networking gear.

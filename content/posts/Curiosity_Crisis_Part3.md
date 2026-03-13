@@ -21,7 +21,7 @@ summary: A hands-on guide to using NotebookLM for cybersecurity learning, includ
 series:
   - Curiosity Crisis
 series_order: 3
-featureimage: https://darkrym.com/pictures/cc_3.png
+featureimage: pictures/cc_3.png
 ---
 
 ## Introduction
