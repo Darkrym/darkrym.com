@@ -544,6 +544,59 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; 
 .cli-os-btn:not(.active):hover { color: var(--text); }
 .cli-os-section { display: none; }
 .cli-os-section.active { display: block; }
+
+/* ── POST LIST SECTION ───────────────────────────────────────── */
+.post-list-section {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.post-list-section h2 {
+  font-size: 16px;
+  color: var(--bright);
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+.post-list-section .section-desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.post-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+}
+.post-list li {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.post-list li:hover {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+.post-list li a {
+  color: var(--bright);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+.post-list li a:hover { color: var(--accent); }
+.post-list li span {
+  font-size: 11px;
+  color: var(--muted);
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -2785,6 +2838,24 @@ int 3               ; Breakpoint (0xCC)</code></pre>
   </div>
 
 </div><!-- /tab-reverse-eng -->
+
+<!-- ── FULL CHEATSHEET POSTS ─────────────────────────────────── -->
+<div class="post-list-section">
+  <h2>Full Cheatsheet Posts</h2>
+  <p class="section-desc">In-depth cheatsheets with detailed explanations and examples</p>
+  <ul class="post-list">
+    <li><a href="/posts/malware-analysis-cheat-sheet/">Malware Analysis Cheat Sheet</a><span>Static & dynamic analysis with Ghidra, x64dbg, REMnux</span></li>
+    <li><a href="/posts/windows_logs_cheatsheet/">Windows Log Analysis Cheat Sheet</a><span>Event IDs, logon types, and Chainsaw techniques</span></li>
+    <li><a href="/posts/windows_registry_cheatsheet/">Windows Registry Cheat Sheet</a><span>Persistence mechanisms and forensic artifacts</span></li>
+    <li><a href="/posts/windows_powershell_cheatsheet/">Windows CLI Commands Cheat Sheet</a><span>PowerShell essentials for sysadmins and analysts</span></li>
+    <li><a href="/posts/markdown_cheat_sheet/">Markdown Cheatsheet</a><span>Syntax reference for documentation and writing</span></li>
+    <li><a href="/posts/macos_terminal_cheatsheet/">macOS CLI Commands Cheat Sheet</a><span>Terminal commands, Homebrew, and security controls</span></li>
+    <li><a href="/posts/ip_domain_investigation_cheat-sheet/">IP & Domain Investigation Cheat Sheet</a><span>OSINT techniques for threat hunting</span></li>
+    <li><a href="/posts/regex_cheatsheet/">Regex Cheat Sheet</a><span>Pattern matching for detection engineering</span></li>
+    <li><a href="/posts/sigma_rule_cheatsheet/">Sigma Rule Cheat Sheet</a><span>Detection rule writing for SIEM platforms</span></li>
+    <li><a href="/posts/sql_server_cheatsheet/">MSSQL Cheat Sheet</a><span>SQL Server forensics and threat hunting</span></li>
+  </ul>
+</div>
 
 </main><!-- /main -->
 

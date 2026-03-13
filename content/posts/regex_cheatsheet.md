@@ -8,8 +8,6 @@ type:
   - posts
 title: Regex Cheat Sheet
 weight: 11
-_build:
-  list: never
 tags:
   - cheatsheet
   - regex

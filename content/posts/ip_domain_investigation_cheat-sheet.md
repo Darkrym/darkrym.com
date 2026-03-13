@@ -8,8 +8,6 @@ type:
   - posts
 title: IP & Domain Investigation Cheat Sheet
 weight: 20
-_build:
-  list: never
 tags:
   - cheatsheet
   - osint

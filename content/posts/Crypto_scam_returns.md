@@ -14,7 +14,7 @@ tags:
   - powershell
   - threat-intelligence
 summary: A polished YouTube video promoting a fake TradingView AI feature nearly fooled security analysts with professional branding and clever social engineering, delivering NetSupport RAT through PowerShell to target crypto wallets.
-featureimage: /pictures/crypto_scam.png
+featureimage: https://darkrym.com/pictures/crypto_scam.png
 ---
 ## TradingView Themed Phish Spreads NetSupport RAT 
 

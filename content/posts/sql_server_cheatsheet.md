@@ -8,8 +8,6 @@ type:
 - posts
 title: MSSQL Cheat Sheet
 weight: 10
-_build:
-  list: never
 tags:
   - cheatsheet
   - mssql

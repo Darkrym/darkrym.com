@@ -17,7 +17,7 @@ series:
   - Basics
 series_order: 2
 summary: Learn to balance speed and thoroughness in MDR investigations using Kill Chain analysis and Likelihood vs Impact matrices to make fast, defensible decisions under pressure.
-featureimage: /pictures/investigation_theory.png
+featureimage: https://darkrym.com/pictures/investigation_theory.png
 ---
 
 ## Introduction
