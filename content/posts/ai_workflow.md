@@ -15,7 +15,7 @@ tags:
   - workflow
 series:
   - Basics
-series_order: 1
+series_order: 3
 summary: Solving operational friction points with a team of analysts powered by AI-assisted coding. Layered context, guided workflows, and systematic debugging that let non-developers ship production-quality code.
 featureimage: pictures/ai_workflow.png
 imagePosition: center center

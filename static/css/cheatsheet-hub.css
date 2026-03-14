@@ -80,7 +80,7 @@
 .cheatsheet-hub-wrapper .sticky-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 40;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
