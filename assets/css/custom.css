@@ -38,3 +38,9 @@
   font-weight: bold;
   text-decoration: inherit;
 }
+
+/* Show full feature image on posts without cropping */
+.single_hero_round {
+  max-height: none;
+  object-fit: contain;
+}
