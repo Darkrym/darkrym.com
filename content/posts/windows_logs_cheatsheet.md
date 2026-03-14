@@ -19,6 +19,8 @@ series_order: 2
 summary: Critical Windows event IDs, logon types, and log locations for threat hunting and incident response, including Security.evtx, PowerShell logs, and Chainsaw analysis techniques.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 This Windows Event Logs cheat sheet is designed for digital forensics, threat hunting, and security event analysis. It summarises critical Windows event IDs, logon types, and log source locations (Security.evtx, System.evtx, PowerShell logs, and more). Perfect for SOC analysts, incident responders, and malware investigators, this guide helps identify suspicious activity and map attack chains using native event logs.
 
 ---

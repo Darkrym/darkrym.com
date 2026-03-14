@@ -19,7 +19,9 @@ series_order: 8
 summary: Essential regex patterns for matching, capturing, and string manipulation adapted for security analysts, blue teamers, and SOC professionals working with detection rules.
 ---
 
-This regex reference outlines essential components for pattern matching, capturing, and string manipulation, drawn from DaveChild’s widely used Regular Expressions cheat sheet, but adapted for security analysts, blue teamers, and SOC professionals.
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
+This regex reference outlines essential components for pattern matching, capturing, and string manipulation, drawn from DaveChild's widely used Regular Expressions cheat sheet, but adapted for security analysts, blue teamers, and SOC professionals.
 
 ---
 ## The Basics

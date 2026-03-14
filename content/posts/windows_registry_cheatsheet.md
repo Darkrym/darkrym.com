@@ -19,6 +19,8 @@ series_order: 3
 summary: Key Windows Registry locations for persistence mechanisms, user activity traces, and IOC hunting in malware analysis and forensic investigations for DFIR professionals.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 This cheat sheet offers a concise guide to key Windows Registry locations and artefacts used in malware analysis, forensic investigations, and threat detection. It includes common persistence mechanisms, user activity traces, and system configuration paths, alongside valuable tips for hunting indicators of compromise (IOCs). Ideal for DFIR professionals and red/blue team operations.
 
 ---

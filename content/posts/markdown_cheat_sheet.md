@@ -21,6 +21,8 @@ summary: Quick reference for Markdown syntax covering headings, formatting, list
 ---
 Content from [The Markdown Guide](https://www.markdownguide.org/ "https://www.markdownguide.org")
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 # Basic Syntax
 ```
 # Heading 1  

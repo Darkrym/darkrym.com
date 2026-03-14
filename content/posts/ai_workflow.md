@@ -22,15 +22,15 @@ featureimage: pictures/ai_workflow.png
 
 ## The Maker's Itch
 
-I've always loved building things, 3D printing, metalwork, woodworking, anything that involves creating something with your own hands, taking an idea and making it real. But code was never part of that. I'd write scripts begrudgingly to automate something annoying or enable me to achieve something cool, but I hated dev work.
+I've always loved building things, 3D printing, metalwork, woodworking, anything that involves creating something with your own hands, taking an idea and making it real. But coding was never part of that. I could always program, I'm just slow and spend more time remembering how than actually building. I'd write scripts begrudgingly to automate something annoying or enable me to achieve something cool, but I hated dev work.
 
-I could always program. I'm just slow and spend more time remembering how than actually building. Ideas were never the bottleneck. Implementation overhead was.
-
-Mid last year, that changed. I found the same maker satisfaction in code.
+Mid last year, that changed and I found the same maker satisfaction in code.
 
 People call it "vibe coding", but I hate that term. It suggests you're being unserious, vibing through without understanding what's happening. That's exactly the wrong way to do it, and exactly why most AI-assisted coding projects eventually fail.
 
 Good AI-assisted development uses AI to handle syntax and boilerplate while you make architectural decisions, review output critically, and understand what the code does. You're still the builder. The AI is a power tool, not a replacement for getting into the code yourself.
+
+This guide reflects six months of daily practice. It's a starting point for beginners and intermediate users, not the definitive resource. The landscape evolves fast, and I'm still learning. But if you're looking to get started or wondering why your current approach isn't clicking, this should help.
 
 ---
 
@@ -69,6 +69,8 @@ This all comes down to one word: context.
 Out of the box, an AI assistant knows nothing about any of this. It doesn't know the architectural patterns, the utility libraries, or the conventions. It will generate code that's technically correct but stylistically wrong, code that doesn't fit.
 
 SO we need to teach it, but there's a constraint, the dreaded context windows. AI models can only hold so much information at once. You can't just dump your entire codebase and all your documentation into every conversation. The context would overflow, the model would lose focus, and you'd burn through tokens unnecessarily.
+
+And here's the thing: all you need is your AI of choice, Claude, Gemini, or *shudder* even ChatGPT. None of the add-ons or third-party tools their advertising would make you believe you need. All these add-ons do is give your existing AI context, which you yourself can provide more accurately.
 
 The solution is layered context, information structured so the AI loads what it needs, when it needs it:
 
@@ -179,7 +181,7 @@ All of it came from people who understood their workflows intimately and finally
 
 The gap between knowing what you need and being able to build it used to require years of programming knowledge. Now it requires structured workflows, clear communication, and basic code literacy. The person who feels the problem most acutely can build the solution.
 
-The best tools come from people who feel their absence most acutely.
+The best tools come from people who feel their absence most acutely, so let them build!
 
 ---
 
@@ -187,7 +189,7 @@ The best tools come from people who feel their absence most acutely.
 
 These shaped how I think about AI-assisted development:
 
-- [Building Claude Code](https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny) - Boris Cherny approach
-- [Boris Chery's Workflow](https://x.com/bcherny/status/2007179832300581177?s=20)
+- [Building Claude Code](https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny) 
+- [Boris Chery's Workflow](https://x.com/bcherny/status/2007179832300581177?s=20) - Creator of Claude COde
 - [Fr0gger's AI Advent](https://blog.securitybreak.io/genai-x-sec-advent-2025-edition-32c52ff753b4) - Domain-specific AI workflows for security
 - Advanced Reading: [Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) - Actually, just go read all of [Steve Yegge](https://steve-yegge.medium.com/)'s work!

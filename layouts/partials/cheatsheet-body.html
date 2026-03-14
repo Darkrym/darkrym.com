@@ -29,6 +29,8 @@
         <li><button onclick="showTab('mal-process', this)">mal process</button></li>
         <li><button onclick="showTab('mal-documents', this)">mal documents</button></li>
         <li><button onclick="showTab('reverse-eng', this)">reverse engineering</button></li>
+        <li><button onclick="showTab('splunk', this)">splunk spl</button></li>
+        <li><button onclick="showTab('esql', this)">es|ql</button></li>
 
       </ul>
     </div>
@@ -2241,6 +2243,347 @@ int 3               ; Breakpoint (0xCC)</code></pre>
   <div class="tab-post-link"><a href="/posts/malware-analysis-cheat-sheet/">Read the full Malware Analysis post →</a></div>
 
 </div><!-- /tab-reverse-eng -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     TAB: SPLUNK SPL
+═══════════════════════════════════════════════════════════ -->
+<div id="tab-splunk" class="tab-panel">
+
+  <div class="grid g2" style="align-items:start;">
+
+    <!-- LEFT: Query Structure, Filtering, Field Extraction -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="card">
+        <div class="card-title" style="color:var(--accent);">Query Structure</div>
+        <pre><code>index=main sourcetype=syslog
+| where status=500
+| stats count by host
+| sort -count</code></pre>
+        <div class="note">SPL queries flow through a pipeline using <code>|</code>. Each command processes data and passes results to the next.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--teal);">Filtering</div>
+        <table>
+          <tr><th>Pattern</th><th>Meaning</th></tr>
+          <tr><td><code>field=value</code></td><td>Exact match</td></tr>
+          <tr><td><code>field="value with spaces"</code></td><td>Quoted string match</td></tr>
+          <tr><td><code>field=*</code></td><td>Field exists</td></tr>
+          <tr><td><code>field!=value</code></td><td>Not equal (field must exist)</td></tr>
+          <tr><td><code>NOT field=value</code></td><td>Exclude (includes missing field)</td></tr>
+        </table>
+
+        <h3 class="sub">Where Examples</h3>
+        <pre><code>| where status >= 400
+| where like(user, "admin%")
+| where cidrmatch("10.0.0.0/8", src_ip)
+| where match(url, "(?i)login")</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--blue);">Field Extraction</div>
+
+        <h3 class="sub">Rex - Regex Extraction</h3>
+        <pre><code>| rex field=_raw "user=(?&lt;username&gt;\w+)"
+| rex field=message "from\s+(?&lt;src_ip&gt;\d+\.\d+\.\d+\.\d+)"
+| rex mode=sed "s/password=[^&amp;]+/password=REDACTED/g"</code></pre>
+
+        <h3 class="sub">Spath - JSON/XML</h3>
+        <pre><code>| spath output=user_name path=user.name
+| spath output=first_item path=items{0}.id</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--green);">Source Commands</div>
+        <table>
+          <tr><th>Command</th><th>Purpose</th></tr>
+          <tr><td><code>index</code></td><td>Retrieve events from indexes</td></tr>
+          <tr><td><code>inputlookup</code></td><td>Load data from lookup files</td></tr>
+          <tr><td><code>makeresults</code></td><td>Generate test events</td></tr>
+          <tr><td><code>tstats</code></td><td>Fast indexed field queries</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--purple);">Helpful Links</div>
+        <table>
+          <tr><th>Name</th><th>Description</th></tr>
+          <tr><td><a href="https://docs.splunk.com/Documentation/Splunk/latest/SearchReference" target="_blank">Search Reference</a></td><td>Official command reference</td></tr>
+          <tr><td><a href="https://lantern.splunk.com/" target="_blank">Splunk Lantern</a></td><td>Use cases and tutorials</td></tr>
+          <tr><td><a href="https://github.com/splunk/botsv3" target="_blank">BOTS Datasets</a></td><td>Practice datasets for threat hunting</td></tr>
+        </table>
+      </div>
+
+    </div><!-- /left column -->
+
+    <!-- RIGHT: Eval, Stats, Time, Performance -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="card">
+        <div class="card-title" style="color:var(--yellow);">Eval Functions</div>
+        <table>
+          <tr><th>Function</th><th>Example</th></tr>
+          <tr><td><code>if(cond, true, false)</code></td><td><code>if(status=200, "ok", "fail")</code></td></tr>
+          <tr><td><code>case(c1, v1, ...)</code></td><td><code>case(level=1, "low", 1=1, "high")</code></td></tr>
+          <tr><td><code>coalesce(f1, f2)</code></td><td><code>coalesce(user, "unknown")</code></td></tr>
+          <tr><td><code>in(field, v1, v2)</code></td><td><code>in(status, 200, 201, 204)</code></td></tr>
+          <tr><td><code>cidrmatch(cidr, ip)</code></td><td><code>cidrmatch("192.168.0.0/16", src)</code></td></tr>
+        </table>
+
+        <h3 class="sub">String Functions</h3>
+        <pre><code>upper(s) / lower(s)      | Case conversion
+substr(s, start, len)    | Extract substring
+len(s)                   | String length
+replace(s, regex, new)   | Replace pattern
+split(s, delim)          | Split to multi-value</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--blue);">Stats &amp; Aggregation</div>
+        <pre><code>| stats count by host
+| stats count, avg(duration), max(bytes) by status
+| stats dc(user) AS unique_users by src_ip
+| stats earliest(_time), latest(_time) by host
+| stats list(action), values(user) by session_id</code></pre>
+
+        <table>
+          <tr><th>Function</th><th>Purpose</th></tr>
+          <tr><td><code>count</code> / <code>dc(field)</code></td><td>Count / distinct count</td></tr>
+          <tr><td><code>sum</code> / <code>avg</code></td><td>Total / average</td></tr>
+          <tr><td><code>min</code> / <code>max</code></td><td>Extremes</td></tr>
+          <tr><td><code>earliest</code> / <code>latest</code></td><td>First/last by time</td></tr>
+          <tr><td><code>list</code> / <code>values</code></td><td>All values / unique values</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--orange);">Time Operations</div>
+        <pre><code>| timechart span=1h count by status
+| bucket _time span=1d | stats count by _time</code></pre>
+
+        <table>
+          <tr><th>Function</th><th>Example</th></tr>
+          <tr><td><code>now()</code></td><td><code>eval age = now() - _time</code></td></tr>
+          <tr><td><code>strftime(time, fmt)</code></td><td><code>strftime(_time, "%Y-%m-%d")</code></td></tr>
+          <tr><td><code>relative_time(t, spec)</code></td><td><code>relative_time(now(), "-1d@d")</code></td></tr>
+        </table>
+
+        <h3 class="sub">Relative Time Syntax</h3>
+        <pre><code>-1h        | 1 hour ago
+-7d@d      | 7 days ago, rounded to day start
+-1mon@mon  | Start of last month
+@d         | Start of today</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--green);">Data Transformation</div>
+        <table>
+          <tr><th>Command</th><th>Purpose</th></tr>
+          <tr><td><code>table</code></td><td>Select and order fields</td></tr>
+          <tr><td><code>sort</code></td><td>Order results (<code>-</code> for descending)</td></tr>
+          <tr><td><code>dedup</code></td><td>Remove duplicates</td></tr>
+          <tr><td><code>head</code> / <code>tail</code></td><td>First/last N results</td></tr>
+          <tr><td><code>top</code> / <code>rare</code></td><td>Most/least frequent values</td></tr>
+          <tr><td><code>lookup</code></td><td>Enrich from external source</td></tr>
+          <tr><td><code>join</code></td><td>Combine results (use lookup when possible)</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--purple);">Performance Tips</div>
+        <ul class="rows">
+          <li><strong>Filter early</strong> — use indexed fields first (index, sourcetype, host, _time)</li>
+          <li><strong>Be specific</strong> — avoid leading wildcards (<code>*admin</code> is slow)</li>
+          <li><strong>Remove _raw</strong> — use <code>fields - _raw</code> before stats when not needed</li>
+          <li><strong>Prefer lookups</strong> — faster than joins for enrichment</li>
+          <li><strong>Use tstats</strong> — for indexed field queries on large datasets</li>
+          <li><strong>Include over exclude</strong> — <code>status=200</code> is faster than <code>NOT status=404</code></li>
+        </ul>
+      </div>
+
+    </div><!-- /right column -->
+
+  </div><!-- /two-col -->
+
+  <div class="tab-post-link"><a href="/posts/splunk_spl_cheatsheet/">Read the full Splunk SPL post →</a></div>
+
+</div><!-- /tab-splunk -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     TAB: ES|QL
+═══════════════════════════════════════════════════════════ -->
+<div id="tab-esql" class="tab-panel">
+
+  <div class="grid g2" style="align-items:start;">
+
+    <!-- LEFT: Query Structure, Filtering, Field Operations -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="card">
+        <div class="card-title" style="color:var(--accent);">Query Structure</div>
+        <pre><code>FROM logs-endpoint
+| WHERE process.name == "curl.exe"
+| STATS count = COUNT(*) BY host.name
+| SORT count DESC
+| LIMIT 10</code></pre>
+        <div class="note">ES|QL uses a pipe-based syntax. Each command processes data and passes results to the next. Queries start with a source command.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--teal);">Filtering</div>
+        <pre><code>| WHERE status >= 400
+| WHERE user.name == "admin"
+| WHERE event.action IS NOT NULL
+| WHERE process.name LIKE "*.exe"
+| WHERE source.ip RLIKE "^10\\..*"
+| WHERE event.category IN ("authentication", "network")</code></pre>
+
+        <table>
+          <tr><th>Operator</th><th>Purpose</th></tr>
+          <tr><td><code>==</code>, <code>!=</code></td><td>Equality</td></tr>
+          <tr><td><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></td><td>Comparison</td></tr>
+          <tr><td><code>IS NULL</code>, <code>IS NOT NULL</code></td><td>Null checks</td></tr>
+          <tr><td><code>LIKE</code></td><td>Wildcard pattern (<code>*</code> and <code>?</code>)</td></tr>
+          <tr><td><code>RLIKE</code></td><td>Regex pattern</td></tr>
+          <tr><td><code>IN</code></td><td>Value in list</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--blue);">Field Operations</div>
+
+        <h3 class="sub">EVAL - Create/Modify Fields</h3>
+        <pre><code>| EVAL duration_sec = event.duration / 1000000000
+| EVAL full_name = CONCAT(user.first_name, " ", user.last_name)
+| EVAL is_error = status >= 400</code></pre>
+
+        <h3 class="sub">Field Management</h3>
+        <table>
+          <tr><th>Command</th><th>Purpose</th></tr>
+          <tr><td><code>KEEP</code></td><td>Select fields (supports wildcards)</td></tr>
+          <tr><td><code>DROP</code></td><td>Remove fields</td></tr>
+          <tr><td><code>RENAME</code></td><td>Rename fields</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--green);">Field Extraction</div>
+
+        <h3 class="sub">DISSECT - Delimiter-Based</h3>
+        <pre><code>| DISSECT message "%{date} - %{level} - %{msg}"
+| KEEP date, level, msg</code></pre>
+
+        <h3 class="sub">GROK - Regex-Based</h3>
+        <pre><code>| GROK message "%{TIMESTAMP_ISO8601:timestamp} %{IP:client_ip} %{WORD:method}"</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--purple);">Helpful Links</div>
+        <table>
+          <tr><th>Name</th><th>Description</th></tr>
+          <tr><td><a href="https://www.elastic.co/docs/reference/query-languages/esql" target="_blank">ES|QL Reference</a></td><td>Official ES|QL documentation</td></tr>
+          <tr><td><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/esql-commands.html" target="_blank">ES|QL Commands</a></td><td>Complete command reference</td></tr>
+          <tr><td><a href="https://www.elastic.co/security-labs/" target="_blank">Security Labs</a></td><td>Threat research and detection rules</td></tr>
+        </table>
+      </div>
+
+    </div><!-- /left column -->
+
+    <!-- RIGHT: Stats, Functions, Examples -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="card">
+        <div class="card-title" style="color:var(--yellow);">Stats &amp; Aggregation</div>
+        <pre><code>| STATS total = COUNT(*)
+| STATS avg_duration = AVG(event.duration) BY host.name
+| STATS requests = COUNT(*), errors = COUNT(*) WHERE status >= 400 BY url.path</code></pre>
+
+        <table>
+          <tr><th>Function</th><th>Purpose</th></tr>
+          <tr><td><code>COUNT(*)</code> / <code>COUNT(field)</code></td><td>Count events/values</td></tr>
+          <tr><td><code>COUNT_DISTINCT(field)</code></td><td>Unique count</td></tr>
+          <tr><td><code>SUM</code> / <code>AVG</code></td><td>Total / average</td></tr>
+          <tr><td><code>MIN</code> / <code>MAX</code></td><td>Extremes</td></tr>
+          <tr><td><code>MEDIAN</code></td><td>Median value</td></tr>
+          <tr><td><code>PERCENTILE(field, p)</code></td><td>Percentile value</td></tr>
+          <tr><td><code>VALUES(field)</code></td><td>Unique values list</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--blue);">String Functions</div>
+        <table>
+          <tr><th>Function</th><th>Purpose</th></tr>
+          <tr><td><code>CONCAT(s1, s2, ...)</code></td><td>Join strings</td></tr>
+          <tr><td><code>LENGTH(s)</code></td><td>String length</td></tr>
+          <tr><td><code>SUBSTRING(s, start, len)</code></td><td>Extract portion</td></tr>
+          <tr><td><code>TO_UPPER</code> / <code>TO_LOWER</code></td><td>Case conversion</td></tr>
+          <tr><td><code>REPLACE(s, old, new)</code></td><td>Replace text</td></tr>
+          <tr><td><code>SPLIT(s, delim)</code></td><td>Split to array</td></tr>
+          <tr><td><code>STARTS_WITH</code> / <code>ENDS_WITH</code></td><td>Check prefix/suffix</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--orange);">Date Functions</div>
+        <table>
+          <tr><th>Function</th><th>Example</th></tr>
+          <tr><td><code>NOW()</code></td><td><code>EVAL age = NOW() - @timestamp</code></td></tr>
+          <tr><td><code>DATE_EXTRACT(unit, date)</code></td><td><code>DATE_EXTRACT("hour", @timestamp)</code></td></tr>
+          <tr><td><code>DATE_FORMAT(fmt, date)</code></td><td><code>DATE_FORMAT("yyyy-MM-dd", @timestamp)</code></td></tr>
+          <tr><td><code>DATE_TRUNC(unit, date)</code></td><td><code>DATE_TRUNC(1 hour, @timestamp)</code></td></tr>
+          <tr><td><code>DATE_DIFF(unit, d1, d2)</code></td><td><code>DATE_DIFF("day", start, end)</code></td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--green);">Practical Examples</div>
+
+        <h3 class="sub">Failed Login Analysis</h3>
+        <pre><code>FROM logs-*
+| WHERE event.category == "authentication"
+    AND event.outcome == "failure"
+| STATS failures = COUNT(*) BY user.name, source.ip
+| WHERE failures > 5
+| SORT failures DESC</code></pre>
+
+        <h3 class="sub">Bytes Transferred by Source</h3>
+        <pre><code>FROM logs-endpoint
+| STATS total_bytes = SUM(network.bytes) BY source.address
+| EVAL total_mb = ROUND(total_bytes / 1048576, 2)
+| SORT total_mb DESC
+| LIMIT 20</code></pre>
+
+        <h3 class="sub">Process Execution Summary</h3>
+        <pre><code>FROM logs-endpoint
+| WHERE event.category == "process" AND event.type == "start"
+| STATS executions = COUNT(*), hosts = COUNT_DISTINCT(host.name) BY process.name
+| SORT executions DESC
+| LIMIT 25</code></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title" style="color:var(--purple);">Conditional &amp; Type Functions</div>
+        <table>
+          <tr><th>Function</th><th>Purpose</th></tr>
+          <tr><td><code>CASE(c1, v1, ..., default)</code></td><td>Conditional branching</td></tr>
+          <tr><td><code>COALESCE(f1, f2, ...)</code></td><td>First non-null value</td></tr>
+          <tr><td><code>TO_STRING</code> / <code>TO_INTEGER</code></td><td>Type conversion</td></tr>
+          <tr><td><code>TO_DATETIME</code> / <code>TO_IP</code></td><td>Specialized conversion</td></tr>
+        </table>
+      </div>
+
+    </div><!-- /right column -->
+
+  </div><!-- /two-col -->
+
+  <div class="tab-post-link"><a href="/posts/esql_cheatsheet/">Read the full ES|QL post →</a></div>
+
+</div><!-- /tab-esql -->
+
 
 </main><!-- /main -->
 

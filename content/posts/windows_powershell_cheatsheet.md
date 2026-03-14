@@ -19,6 +19,8 @@ series_order: 4
 summary: Fast-access PowerShell reference for system administration, automation, security auditing, covering file management, networking, scripting, and Winget for IT pros and analysts.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 This PowerShell cheat sheet is your fast-access reference for essential Windows CLI commands used in system administration, task automation, security auditing, and endpoint analysis. From file and process management to networking, scripting, and package control with Winget, this guide empowers both IT professionals and security analysts to work more efficiently with the Windows command line.
 
 ---

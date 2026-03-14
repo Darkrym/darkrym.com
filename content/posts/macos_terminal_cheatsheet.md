@@ -18,6 +18,8 @@ series_order: 6
 summary: Essential macOS Terminal commands for file operations, process management, networking, Homebrew, and security controls like Gatekeeper and SIP for sysadmins and DFIR practitioners.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 This macOS Terminal cheat sheet summarises critical shell commands and scripting techniques for macOS users involved in administration, development, and security tasks. It covers file system navigation, process monitoring, networking, Homebrew usage, and system security settings like Gatekeeper and SIP. Ideal for Apple-focused sysadmins, DFIR practitioners, and macOS power users.
 
 ---

@@ -19,6 +19,8 @@ series_order: 10
 summary: Microsoft SQL Server forensics and threat hunting guide covering registry paths, log locations, attack indicators, and configuration analysis for compromised SQL Server instances.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 This Microsoft SQL Server cheat sheet is designed for digital forensics, incident response, and threat hunting. It covers registry paths, log file locations, attack indicators, and configuration analysis for Microsoft SQL Server. Perfect for SOC analysts, incident responders, and security investigators hunting for compromised SQL Server instances.
 
 ---

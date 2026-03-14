@@ -19,6 +19,8 @@ series_order: 9
 summary: Concise guide for writing Sigma detection rules covering structure, modifiers, best practices, and tools for SOC analysts and detection engineers working with Splunk, Elastic, or LogPoint.
 ---
 
+> View all cheatsheets in an interactive format at [Cheat Sheets](/cheat-sheets/).
+
 A concise guide for writing, editing, and testing Sigma detection rules. Covers rule structure, value modifiers, best practices, common pitfalls, and tools. Perfect for SOC analysts, threat hunters, and detection engineers working with SIEMs like Splunk, Elastic, or LogPoint.
 
 ---
