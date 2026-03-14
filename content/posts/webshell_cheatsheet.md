@@ -162,8 +162,6 @@ For a real-world example of webshell analysis, see my breakdown of the [Nezha Ch
 
 ## IIS Investigation Walkthrough
 
-*Credit: Mark OHalloran*
-
 ### Step 1: Identify the WebApp Running
 
 Figure out what's actually running on IIS — Exchange, SharePoint, or custom WebApps.
