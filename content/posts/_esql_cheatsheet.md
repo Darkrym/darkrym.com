@@ -17,7 +17,7 @@ tags:
   - threat-hunting
 series:
   - Cheatsheets
-series_order: 11
+series_order: 13
 summary: Practical ES|QL reference for security analysts covering query structure, filtering, aggregations, field operations, and data transformations for threat hunting in Elastic Security.
 ---
 

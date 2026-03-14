@@ -16,7 +16,7 @@ tags:
   - threat-hunting
 series:
   - Cheatsheets
-series_order: 11
+series_order: 12
 summary: Practical SPL reference for security analysts covering search commands, filtering, field operations, statistics, and data transformations for threat hunting and log analysis.
 ---
 
