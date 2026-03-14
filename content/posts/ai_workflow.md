@@ -191,6 +191,6 @@ The best tools come from people who feel their absence most acutely, so let them
 These shaped how I think about AI-assisted development:
 
 - [Building Claude Code](https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny) 
-- [Boris Chery's Workflow](https://x.com/bcherny/status/2007179832300581177?s=20) - Creator of Claude COde
+- [Boris Chery's Workflow](https://x.com/bcherny/status/2007179832300581177?s=20) - Creator of Claude Code
 - [Fr0gger's AI Advent](https://blog.securitybreak.io/genai-x-sec-advent-2025-edition-32c52ff753b4) - Domain-specific AI workflows for security
 - Advanced Reading: [Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) - Actually, just go read all of [Steve Yegge](https://steve-yegge.medium.com/)'s work!
