@@ -8,6 +8,7 @@ rm -rf public/ resources/
 echo "Pulling latest changes from GitHub..."
 git fetch origin blowfish-lite
 git reset --hard origin/blowfish-lite
+chmod +x update.sh
 
 echo "Building site with Hugo..."
 hugo --gc --cleanDestinationDir
