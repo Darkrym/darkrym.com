@@ -510,3 +510,22 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; 
 .cheatsheet-hub-wrapper .cli-os-section { display: none; }
 .cheatsheet-hub-wrapper .cli-os-section.active { display: block; }
 
+
+
+/* ── TAB POST LINKS ─────────────────────────────────────────── */
+.cheatsheet-hub-wrapper .tab-post-link {
+  margin-top: 24px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.cheatsheet-hub-wrapper .tab-post-link a {
+  color: var(--accent);
+  font-size: 13px;
+}
+.cheatsheet-hub-wrapper .tab-post-link a:hover {
+  color: #fff;
+  text-decoration: underline !important;
+}
